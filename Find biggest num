@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int findMax(int n, int j, int k);
+int main() {
+
+cout << findMax(20, 30, 40);
+
+}
+
+int findMax(int n, int j, int k) {
+
+	if (n > j && n > k)
+		return n;
+
+	else if (j > k)
+		return j;
+	else
+		return k;
+}
